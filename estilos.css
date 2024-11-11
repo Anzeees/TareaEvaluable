@@ -1,0 +1,149 @@
+* {
+    /* La linea de borde la usamos para hacer pruebas
+    y ver donde estan los bordes de todos los contenedores */
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Lilita One", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f2bb16;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+    margin: 2% 0;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1%;
+}
+
+.titular {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titular img {
+    width: 15%;
+    max-width: 150px;
+    margin: -1% 0;
+}
+
+.encabezado {
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d3b8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    margin: 20px;
+    background-color: #d9d3b8;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5% 0;
+    color: green;
+}
+
+nav a:hover {
+    color: rgb(4, 100, 20);
+    text-shadow: 2px 2px 3px gray;
+}
+
+nav div {
+    margin: 6px;
+    /* box-shadow: 5px 5px gray; */
+    filter: drop-shadow(3px 3px 1px gray);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+main>* {
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #d9d3b8;
+}
+
+aside {
+    width: 25%;
+}
+
+.galeria {
+    margin: 1%;
+}
+
+article {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+}
+
+.textoart {
+    width: 75%;
+}
+
+.textoart * {
+    padding: 10px;
+}
+
+.imagen {
+    max-width: 75%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+}
+
+.imagencuadrada {
+    max-width: 80%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+}
+
+.contenido .imagencuadrada {
+    width: 150px;
+    float: left;
+    margin: 0 5px;
+}
+
+article aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer {
+    margin: 2%;
+    padding: 15px;
+    background-color: #d9d3b8;
+    border-radius: 7px;
+    border: 1px solid black;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABEJAS Y ZÁNGANOS</title>
+    <!-- Añadimos la fuente Lilita One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <!-- Añadimos la fuente Chakra Petch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lilita+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilosformulario.css">
+</head>
+
+<body>
+    <header>
+        <div class="titular">
+            <img src="image/logosf.png">
+            <div class="encabezado">
+                <h1>ABEJAS Y ZÁNGANOS</h1>
+                <h3>ASOCIACIÓN SIERRA DE GATA</h3>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html" class="casa"><img src="image/casa-silueta-negra-sin-puerta.png" alt="Inicio"></a>
+            <a href="compra.html">Compra nuestros productos</a>
+            <!-- <a href="formulario.html">Contacta con nosotros</a> -->
+        </nav>
+    </header>
+    <main>
+        <article>
+            <form action="" method="get">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" required><br>
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" name="apellidos" id="apellidos" placeholder="APELLIDOS" required><br>
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" name="correo" id="correo" placeholder="CORREO" required><br>
+                <label for="consulta">Tipo de consulta</label><br>
+                <select name="consulta" id="consulta">
+                    <option value="compra">COMPRA</option>
+                    <option value="otro">OTRO...</option>
+                </select><br>
+                <label for="texto">Texto</label><br>
+                <textarea name="texto" id="texto" cols="30" rows="10" placeholder="¿Cual es te consulta?" required></textarea><br><br>
+                <div class="columnaenviar">
+                    <input type="submit" value="Enviar" class="botones">
+                    <input type="reset" value="Borrar" class="botones">
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>PROTOTIPO ABEJAS Y ZANGANOS: ÁNGEL MARTÍNEZ ORDIALES</p>
+    </footer>
+</body>
+
+</html>
